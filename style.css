@@ -111,7 +111,7 @@ p{
     display: block;
     width: 50%;
     height: 100%;
-    background: -webkit-linear-gradient(to right,rgba(255, 255, 255, 0) 0%,rgba(0, 0, 0, 0.3) 100%);
+    /* background: -webkit-linear-gradient(to right,rgba(255, 255, 255, 0) 0%,rgba(0, 0, 0, 0.3) 100%); */
      background: linear-gradient(to right,rgba(255, 255, 255, 0) 0%,rgba(0, 0, 0, 0.3) 100%);
     transform: skewX(-25deg); 
 }
@@ -417,6 +417,44 @@ p{
     outline: none;
     border: none;
 }
+.copyright{
+    background: var(--bg-danger);
+}
+.copyright p{
+    color: var(--text-white);
+
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2rem 9%;
+    justify-content: space-between;
+    background: var(--bg-danger);
+}
+.footer-text,.footer-icon{
+    position: relative;
+}
+.footer-text p{
+    font-size: 1.6rem;
+    color: var(--text-white);
+}
+.footer-icon a {
+    display: inline-flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: var(--bg-danger);
+    border: .2rem solid var(--bg-danger);
+    border-radius: .6rem;
+    text-decoration: none;
+}
+.footer-icon a i{
+    font-size: 2.4rem;
+    color: var(--text-white);
+}
+
 /* product css */
 @keyframes effect_shine{
     100%{
@@ -497,5 +535,8 @@ p{
     }
     .home .slider-icon{
         font-size: 2rem;
+    }
+    .products .up_to_content h2{
+        font-size: 0.625rem;
     }
 }
